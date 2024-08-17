@@ -1,0 +1,25 @@
+// ========== Media Queries ==========
+//Small devices (portrait phones, 320 and down)
+@mixin mobile {
+    @media only screen and (min-width: 320px) {
+        @content;
+    }
+}
+//Medium devices (portrait tablets,landscape phone, 768px and down)
+@mixin pad {
+    @media only screen and (min-width: 768px) {
+        @content;
+    }
+}
+//Large devices (laptops, 1024 and down)
+@mixin laptops {
+    @media only screen and (min-width: 1024px) {
+        @content;
+    }
+}
+//Extra Large devices (laptops and desktop, 1200 and down)
+@mixin desktop {
+    @media only screen and (min-width: 1200px) {
+        @content;
+    }
+}
