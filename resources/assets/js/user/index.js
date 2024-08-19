@@ -1,20 +1,28 @@
-// let scrollToHeight = 0;
+import $ from 'jquery';
+
 import WOW from 'wow.js';
 import 'animate.css';
 
-const wow = new WOW(
-    {
-        boxClass: 'wow',
-        animateClass: 'animated',
-        offset: 0,
-        live: true
-    }
-);
+$(document).ready(function() {
+    anchor();
+    wow();
+});
 
+function wow() {
+    const wow = new WOW(
+        {
+            boxClass: 'wow',
+            animateClass: 'animated',
+            offset: 0,
+            live: true
+        }
+    );
+}
 
-const sections = document.querySelectorAll('[data-section]');
-const buttons = document.querySelectorAll('[data-target-section]');
-let currentSection = 0;
+function anchor() {
+    const sections = document.querySelectorAll('[data-section]');
+    const buttons = document.querySelectorAll('[data-target-section]');
+    let currentSection = 0;
 //
 // window.addEventListener('wheel', (event) => {
 //     event.preventDefault();
@@ -38,18 +46,23 @@ let currentSection = 0;
 //     buttons[currentSection].dispatchEvent(new Event('click'));
 // }, { passive: false });
 //
-buttons.forEach((button) => {
-    button.addEventListener('click', (event) => {
-        const targetSectionId = event.target.dataset.targetSection;
-        currentSection = targetSectionId;
+    buttons.forEach((button) => {
+        button.addEventListener('click', (event) => {
+            const targetSectionId = event.target.dataset.targetSection;
+            currentSection = targetSectionId;
+            const navbarHeight = document.querySelector('[data-element="navbar"]').clientHeight;
+            const targetTopHeight = document.querySelector(`[data-section="${targetSectionId}"]`).offsetTop;
+            // const viewHeight = document.documentElement.clientHeight;
+            const targetTop = targetTopHeight - navbarHeight - 100;
+            window.scrollTo({
+                top: targetTop,
+                behavior: "smooth"
+            });
 
-        document.querySelector(`[data-section="${targetSectionId}"]`).scrollIntoView({
-            behavior: "smooth"
+            // setTimeout(function() {
+            //     scrollToHeight = 0;
+            //     // console.log('Scroll ended');
+            // }, 1000);
         });
-
-        setTimeout(function() {
-            scrollToHeight = 0;
-            // console.log('Scroll ended');
-        }, 1000);
     });
-});
+}
