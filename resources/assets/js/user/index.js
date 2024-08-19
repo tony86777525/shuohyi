@@ -6,6 +6,13 @@ import 'animate.css';
 $(document).ready(function() {
     anchor();
     wow();
+
+    document.querySelectorAll('[data-js-click="navbar"]').forEach((element) => {
+
+        element.addEventListener('click', (event) => {
+            document.querySelector('[data-element="navbar"]').classList.toggle('is-open');
+        });
+    })
 });
 
 function wow() {

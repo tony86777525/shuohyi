@@ -13,13 +13,14 @@
             <div class="navbar--logo logo">
                 <a href="{{ route('user.index') }}"><img src="{{ url('/images/user/index/logo.png') }}"></a>
             </div>
+            <div class="navbar--menu" data-js-click="navbar"></div>
             <div class="navbar--nav">
                 <div class="navbar--nav__list">
-                    <a data-target-section="0" class="navbar--button">首頁</a>
-                    <a data-target-section="1" class="navbar--button">關於碩誼</a>
-                    <a data-target-section="2" class="navbar--button">專業服務</a>
-                    <a data-target-section="3" class="navbar--button">聯絡我們</a>
-                    <div class="navbar--button">中文 / EN</div>
+                    <a data-target-section="0" class="navbar--button" data-js-click="navbar">首頁</a>
+                    <a data-target-section="1" class="navbar--button" data-js-click="navbar">關於碩誼</a>
+                    <a data-target-section="2" class="navbar--button" data-js-click="navbar">專業服務</a>
+                    <a data-target-section="3" class="navbar--button" data-js-click="navbar">聯絡我們</a>
+                    <div class="navbar--button" data-js-click="navbar">中文 / EN</div>
                 </div>
             </div>
         </nav>
@@ -40,8 +41,8 @@
             <div class="container">
                 <div class="about-us__content">
                     <h2 class="about-us__content--title">
-                        關於我們
-                        <span class="delimiter"></span>
+                        <span class="wow animate__animated animate__rubberBand">關於我們</span>
+                        <span class="delimiter wow animate__animated animate__flip"></span>
                     </h2>
                     <div class="about-us__content--intro">
                         <div class="intro">
@@ -55,7 +56,7 @@
                                     <p class="part--txt">30年專業經驗，累積無數成功案例。</p>
                                 </div>
                                 <div class="part">
-                                    <p class="part--topic">客製化強</p>
+                                    <p class="part--topic">專業客製</p>
                                     <p class="part--txt">滿足您各種特殊需求，打造專屬產品。</p>
                                 </div>
                                 <div class="part">
@@ -88,8 +89,8 @@
             <div class="container">
                 <div class="service__content">
                     <h2 class="service__content--title">
-                        專業服務
-                        <span class="delimiter"></span>
+                        <span class="wow animate__animated animate__rubberBand">專業服務</span>
+                        <span class="delimiter wow animate__animated animate__flip"></span>
                     </h2>
                     <div class="service__content--part">
                         <div class="part">
@@ -185,8 +186,8 @@
             <div class="container">
                 <div class="contact-us__content">
                     <h2 class="service__content--title">
-                        聯絡我們
-                        <span class="delimiter"></span>
+                        <span class="wow animate__animated animate__rubberBand">聯絡我們</span>
+                        <span class="delimiter wow animate__animated animate__flip"></span>
                     </h2>
                     <div class="about-us__content--intro">
                         <div class="intro">
@@ -241,7 +242,7 @@
                                 </div>
                                 <div class="formRow formRow--single required">
                                     <label class="formCol">
-                                        <span class="form--label">驗證碼</span>
+                                        <span class="formCol__title">驗證碼</span>
                                         <input type="text" name="valicode" class="formEl formEl--txtIpt">
                                     </label>
                                 </div>
@@ -261,7 +262,7 @@
             <div class="contact">
                 <div class="contactRow contactRow--phone">03-3292718</div>
                 <div class="contactRow contactRow--fax">03-3299570</div>
-                <div class="contactRow contactRow--email">shuoh.yi@msa.hinet.net</div>
+                <div class="contactRow contactRow--email">shuoh.yi@gmail.com</div>
                 <div class="contactRow contactRow--address">桃園市茶專一街60巷40號</div>
             </div>
             <div class="copyright">Copyright © SHUOH YI ENTEPRISE CO., LTD All rights reserved.</div>
