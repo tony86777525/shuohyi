@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="{{ app()->getLocale() }}">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>碩誼有限公司</title>
+        <title>{{ __('user.company_name') }}</title>
 
         <link rel="shortcut icon" href="{{ asset("images/user/favicon.ico") }}" />
 
@@ -23,7 +23,7 @@
                     <a data-target-section="1" class="navbar--button" data-js-click="navbar">關於碩誼</a>
                     <a data-target-section="2" class="navbar--button" data-js-click="navbar">專業服務</a>
                     <a data-target-section="3" class="navbar--button" data-js-click="navbar">聯絡我們</a>
-                    <div class="navbar--button" data-js-click="navbar">中文 / EN</div>
+                    <a href="{{ url()->current() }}?lang={{ app()->getLocale() === config('lang.available_locales.zh-TW') ? config('lang.available_locales.en') : config('lang.available_locales.zh-TW') }}" class="navbar--button" data-js-click="navbar">中文 / EN</a>
                 </div>
             </div>
         </nav>
@@ -204,7 +204,7 @@
                     </div>
 
                     <div class="about-us__content--form">
-                        <form class="form" method="POST" action="{{ route('web.user.api.mail.store') }}"  data-js="post-form">
+                        <form class="form" method="POST" action="{{ route('user.api.mail.store') }}"  data-js="post-form">
                             <div class="form__content">
                                 <div class="formRow formRow--single required">
                                     <label class="formCol">
@@ -256,7 +256,7 @@
                                         <input type="text" name="captcha" class="formEl formEl--txtIpt @error('captcha') is-invalid @enderror" autocomplete="off">
                                         <div class="captcha">
                                             <img src="{{ captcha_src() }}" alt="">
-                                            <i class="refresh" data-js="refresh-captcha" data-js-url="{{ route('web.user.api.captcha.reload') }}"></i>
+                                            <i class="refresh" data-js="refresh-captcha" data-js-url="{{ route('user.api.captcha.reload') }}"></i>
                                         </div>
                                     </label>
                                     <div data-js="form-error" class="form-error"></div>
@@ -275,9 +275,9 @@
     <footer class="footer">
         <div class="footer__content">
             <div class="contact">
-                <div class="contactRow contactRow--phone">03-3292718</div>
+                <div class="contactRow contactRow--phone"><a href="tel:03-3299570">03-3292718</a></div>
                 <div class="contactRow contactRow--fax">03-3299570</div>
-                <div class="contactRow contactRow--email">shuoh.yi@gmail.com</div>
+                <div class="contactRow contactRow--email"><a href="mailto:shuoh.yi@gmail.com">shuoh.yi@gmail.com</a></div>
                 <div class="contactRow contactRow--address">桃園市茶專一街60巷40號</div>
             </div>
             <div class="copyright">Copyright © SHUOH YI ENTEPRISE CO., LTD All rights reserved.</div>

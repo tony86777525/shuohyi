@@ -17,22 +17,21 @@ use App\Http\Controllers\User\IndexController;
 Route::group([
     'namespace' => 'App\Http\Controllers\User',
     'as' => 'user.',
-//    'middleware' => ['set.web.language'],
+    'middleware' => ['set.web.language'],
 ], function () {
     Route::get('/', [IndexController::class, 'index'])->name('index');
 
-});
-
-Route::group([
-    'as' => 'web.user.api.',
-], function () {
     Route::group([
-        'namespace'     => 'App\Http\Controllers\User\Api',
+        'as' => 'api.',
     ], function () {
-        Route::post('/api/mail/store', 'MailController@store')
-            ->name('mail.store');
+        Route::group([
+            'namespace'     => 'Api',
+        ], function () {
+            Route::post('/api/mail/store', 'MailController@store')
+                ->name('mail.store');
 
-        Route::post('/api/captcha/reload', 'CaptchaController@getCaptchaImageSrc')
-            ->name('captcha.reload');
+            Route::post('/api/captcha/reload', 'CaptchaController@getCaptchaImageSrc')
+                ->name('captcha.reload');
+        });
     });
 });
