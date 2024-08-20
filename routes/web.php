@@ -20,4 +20,19 @@ Route::group([
 //    'middleware' => ['set.web.language'],
 ], function () {
     Route::get('/', [IndexController::class, 'index'])->name('index');
+
+});
+
+Route::group([
+    'as' => 'web.user.api.',
+], function () {
+    Route::group([
+        'namespace'     => 'App\Http\Controllers\User\Api',
+    ], function () {
+        Route::post('/api/mail/store', 'MailController@store')
+            ->name('mail.store');
+
+        Route::post('/api/captcha/reload', 'CaptchaController@getCaptchaImageSrc')
+            ->name('captcha.reload');
+    });
 });
