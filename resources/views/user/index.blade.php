@@ -108,7 +108,7 @@
                                     <p>靈活調整：根據不同的生產需求，輕鬆調整機台參數。</p>
                                     <p>高效能：提升生產效率，降低人工成本。</p>
                                     <p>我們的自動化解決方案旨在幫助客戶提升生產效率，降低操作成本，並提高產品品質。我們的團隊將與您密切合作，根據您的需求定製最佳的自動化方案。</p>
-                                    <p><a href="{{ url('/files/摺紙機型錄.pdf') }}" target="_blank" rel="noreferrer noopener">型錄一覽</a></p>
+                                    <p><a href="{{ url('/files/伺服摺紙機型錄.pdf') }}" target="_blank" rel="noreferrer noopener">型錄一覽</a></p>
                                 </div>
                                 <div class="part__content--image">
                                     <div class="image wow animate__animated animate__bounceInDown">
