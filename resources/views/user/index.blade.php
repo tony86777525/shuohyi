@@ -277,7 +277,7 @@
             <div class="contact">
                 <div class="contactRow contactRow--phone"><a href="tel:03-3299570">03-3292718</a></div>
                 <div class="contactRow contactRow--fax">03-3299570</div>
-                <div class="contactRow contactRow--email"><a href="mailto:shuoh.yi@gmail.com">shuoh.yi@gmail.com</a></div>
+                <div class="contactRow contactRow--email"><a href="mailto:{{ env('MAIL_USERNAME') }}">{{ env('MAIL_USERNAME') }}</a></div>
                 <div class="contactRow contactRow--address">桃園市茶專一街60巷40號</div>
             </div>
             <div class="copyright">Copyright © SHUOH YI ENTEPRISE CO., LTD All rights reserved.</div>

@@ -16,15 +16,15 @@ class MailController extends Controller
 
         $postData = $request->post();
 
-        try {
-            MailService::sendMail($postData);
+//        try {
+            MailService::sendMail($postDat);
 
             $response['message'] = 'Send Mail Success';
-        } catch (\Exception $e) {
+//        } catch (\Exception $e) {
             $statusCode = 500;
 
             $response['message'] = 'Send Mail Fail';
-        }
+//        }
 
         return response()->json($response, $statusCode);
     }

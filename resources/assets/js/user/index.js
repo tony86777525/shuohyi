@@ -44,7 +44,7 @@ $(document).ready(function () {
             },
             complete: function () {
                 formSubmitButton.attr('disabled', false);
-                captchaRefreshButton.click();
+                captchaRefreshButton.trigger('click');
             },
             error: function(res) {
                 let errors = res.responseJSON.errors;
