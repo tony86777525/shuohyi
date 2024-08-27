@@ -111,19 +111,19 @@
                                     <p><a href="{{ url('/files/伺服摺紙機型錄.pdf') }}" target="_blank" rel="noreferrer noopener">型錄一覽</a></p>
                                 </div>
                                 <div class="part__content--image">
-                                    <div class="image wow animate__animated animate__bounceInDown">
+                                    <div class="image wow animate__animated animate__slideInDown">
                                         <img src="{{ url('/images/user/index/service/hepa/img1.jpg') }}">
                                     </div>
-                                    <div class="image wow animate__animated animate__bounceInUp">
+                                    <div class="image wow animate__animated animate__slideInUp">
                                         <img src="{{ url('/images/user/index/service/hepa/img2.jpg') }}">
                                     </div>
-                                    <div class="image wow animate__animated animate__bounceInDown">
+                                    <div class="image wow animate__animated animate__slideInDown">
                                         <img src="{{ url('/images/user/index/service/hepa/img3.jpg') }}">
                                     </div>
-                                    <div class="image wow animate__animated animate__bounceInUp">
+                                    <div class="image wow animate__animated animate__slideInUp">
                                         <img src="{{ url('/images/user/index/service/hepa/img4.jpg') }}">
                                     </div>
-                                    <div class="image wow animate__animated animate__bounceInDown">
+                                    <div class="image wow animate__animated animate__slideInDown">
                                         <img src="{{ url('/images/user/index/service/hepa/img5.jpg') }}">
                                     </div>
                                 </div>
@@ -139,19 +139,19 @@
                                     <p>碩誼的客製化機架燒焊服務不僅重視質量，更注重細節。我們的專業團隊擁有豐富的經驗，能夠在焊接過程中保證每一個接點的精度與強度，並通過嚴格的品質檢驗，確保最終產品完全符合您的期望。</p>
                                 </div>
                                 <div class="part__content--image">
-                                    <div class="image wow animate__animated animate__bounceInDown">
+                                    <div class="image wow animate__animated animate__slideInDown">
                                         <img src="{{ url('/images/user/index/service/customization/img1.jpg') }}">
                                     </div>
-                                    <div class="image wow animate__animated animate__bounceInUp">
+                                    <div class="image wow animate__animated animate__slideInUp">
                                         <img src="{{ url('/images/user/index/service/customization/img2.jpg') }}">
                                     </div>
-                                    <div class="image wow animate__animated animate__bounceInDown">
+                                    <div class="image wow animate__animated animate__slideInDown">
                                         <img src="{{ url('/images/user/index/service/customization/img3.jpg') }}">
                                     </div>
-                                    <div class="image wow animate__animated animate__bounceInUp">
+                                    <div class="image wow animate__animated animate__slideInUp">
                                         <img src="{{ url('/images/user/index/service/customization/img4.jpg') }}">
                                     </div>
-                                    <div class="image wow animate__animated animate__bounceInDown">
+                                    <div class="image wow animate__animated animate__slideInDown">
                                         <img src="{{ url('/images/user/index/service/customization/img5.jpg') }}">
                                     </div>
                                 </div>
@@ -164,19 +164,19 @@
                                     <p>我們融合工藝技術與創意藝術，打造出充滿想像力的鋼構機械藝術品，並與藝術家合作，提供機械化與自動化解決方案。</p>
                                 </div>
                                 <div class="part__content--image">
-                                    <div class="image wow animate__animated animate__bounceInDown">
+                                    <div class="image wow animate__animated animate__slideInDown">
                                         <img src="{{ url('/images/user/index/service/artwork/img1.jpg') }}">
                                     </div>
-                                    <div class="image wow animate__animated animate__bounceInUp">
+                                    <div class="image wow animate__animated animate__slideInUp">
                                         <img src="{{ url('/images/user/index/service/artwork/img2.jpg') }}">
                                     </div>
-                                    <div class="image wow animate__animated animate__bounceInDown">
+                                    <div class="image wow animate__animated animate__slideInDown">
                                         <img src="{{ url('/images/user/index/service/artwork/img3.jpg') }}">
                                     </div>
-                                    <div class="image wow animate__animated animate__bounceInUp">
+                                    <div class="image wow animate__animated animate__slideInUp">
                                         <img src="{{ url('/images/user/index/service/artwork/img6.jpg') }}">
                                     </div>
-                                    <div class="image wow animate__animated animate__bounceInDown">
+                                    <div class="image wow animate__animated animate__slideInDown">
                                         <img src="{{ url('/images/user/index/service/artwork/img7.jpg') }}">
                                     </div>
                                 </div>
