@@ -27,14 +27,14 @@ class MailRequest extends FormRequest
             'phone' => 'required|string|between:3,255',
             'email' => 'required|email',
             'contact' => 'required|string|between:3,500',
-            'captcha' => 'required|captcha',
+//            'captcha' => 'required|captcha',
         ];
     }
 
-    public function messages(): array
-    {
-        return [
-            'captcha' => '驗證碼錯誤, 請重新輸入',
-        ];
-    }
+//    public function messages(): array
+//    {
+//        return [
+//            'captcha' => '驗證碼錯誤, 請重新輸入',
+//        ];
+//    }
 }

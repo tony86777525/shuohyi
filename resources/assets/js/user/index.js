@@ -15,6 +15,7 @@ $(document).ready(function () {
         e.preventDefault();
 
         let form = $(this);
+        let loading = $('[data-js="loading"]')
         let url = form.attr('action');
         let formSubmitButton = form.find('[data-js="form-submit"]');
         let captchaRefreshButton = form.find('[data-js="refresh-captcha"]');
@@ -29,6 +30,7 @@ $(document).ready(function () {
             data: form.serialize(),
             dataType: "JSON",
             beforeSend : function() {
+                loading.show();
                 form.find('[data-js="form-error"]').text('');
                 formSubmitButton.attr('disabled', true);
             },
@@ -45,6 +47,7 @@ $(document).ready(function () {
             complete: function () {
                 formSubmitButton.attr('disabled', false);
                 captchaRefreshButton.trigger('click');
+                loading.hide();
             },
             error: function(res) {
                 let errors = res.responseJSON.errors;
