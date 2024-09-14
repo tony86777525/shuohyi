@@ -12,19 +12,24 @@
 
         @vite(['resources/assets/js/user/index.js', 'resources/assets/sass/user/index.scss'])
     </head>
-    <body>
+    <body class="{{ app()->getLocale() }}">
         <nav class="navbar" data-element="navbar">
-            <div class="navbar--logo logo">
-                <a href="{{ route('user.index') }}"><img src="{{ url('/images/user/index/logo.png') }}" alt="碩誼有限公司"></a>
+            <div class="navbar__language">
+                <a href="{{ url()->current() }}?lang={{ app()->getLocale() === config('lang.available_locales.zh-TW') ? config('lang.available_locales.en') : config('lang.available_locales.zh-TW') }}" class="navbar--button" data-js-click="navbar">中文 / EN</a>
             </div>
-            <div class="navbar--menu" data-js-click="navbar"></div>
-            <div class="navbar--nav">
-                <div class="navbar--nav__list">
-                    <a data-target-section="0" class="navbar--button" data-js-click="navbar">首頁</a>
-                    <a data-target-section="1" class="navbar--button" data-js-click="navbar">關於碩誼</a>
-                    <a data-target-section="2" class="navbar--button" data-js-click="navbar">專業服務</a>
-                    <a data-target-section="3" class="navbar--button" data-js-click="navbar">聯絡我們</a>
-                    <a href="{{ url()->current() }}?lang={{ app()->getLocale() === config('lang.available_locales.zh-TW') ? config('lang.available_locales.en') : config('lang.available_locales.zh-TW') }}" class="navbar--button" data-js-click="navbar">中文 / EN</a>
+            <div class="navbar__other">
+                <div class="navbar--logo logo">
+                    <a href="{{ route('user.index') }}"><img src="{{ url('/images/user/index/logo.png') }}" alt="碩誼有限公司"></a>
+                </div>
+                <div class="navbar--menu" data-js-click="navbar"></div>
+                <div class="navbar--nav">
+                    <div class="navbar--nav__list">
+                        <a data-target-section="0" class="navbar--button" data-js-click="navbar">{{ __('user.navi.index') }}</a>
+                        <a data-target-section="1" class="navbar--button" data-js-click="navbar">{{ __('user.navi.about-us') }}</a>
+                        <a data-target-section="2" class="navbar--button" data-js-click="navbar">{{ __('user.navi.services') }}</a>
+                        <a data-target-section="3" class="navbar--button" data-js-click="navbar">{{ __('user.navi.contact-us') }}</a>
+                        <a href="{{ url()->current() }}?lang={{ app()->getLocale() === config('lang.available_locales.zh-TW') ? config('lang.available_locales.en') : config('lang.available_locales.zh-TW') }}" class="navbar--button language" data-js-click="navbar">中文 / EN</a>
+                    </div>
                 </div>
             </div>
         </nav>

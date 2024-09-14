@@ -91,23 +91,13 @@ section {
     position: sticky;
     z-index: 10;
     top: 0;
-    background-color: #fff;
-    color: #000;
-    text-align: center;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
     letter-spacing: 2px;
-    height: 60px;
     font-size: 1.6rem;
-    padding: 0 0 0 4%;
 
     @media only screen and (min-width: 768px) {
-        height: 100px;
+        //height: 100px;
         font-size: 16px;
-        padding: 0 60px;
     }
 
     &.is-open {
@@ -121,6 +111,10 @@ section {
                 height: 100vh;
                 width: 100vw;
                 background: #fff;
+
+                @media only screen and (min-width: 768px) {
+                    top: 100px;
+                }
 
                 .navbar--nav__list {
                     display: flex;
@@ -136,6 +130,36 @@ section {
 
         .navbar--menu {
             background-image: url($path + "user/icon/close.svg");
+        }
+    }
+
+    &__language {
+        background-color: #f5f5f5;
+        color: #000;
+        padding: 0 60px;
+        text-align: right;
+        height: 36px;
+        display: none;
+
+        @media only screen and (min-width: 1200px) {
+            display: block;
+        }
+    }
+
+    &__other {
+        background-color: #fff;
+        color: #000;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 0 0 4%;
+        height: 60px;
+
+        @media only screen and (min-width: 768px) {
+            padding: 0 60px;
+            height: 100px;
         }
     }
 
@@ -183,7 +207,7 @@ section {
     }
 
     &--button {
-        display: flex;
+        display: inline-flex;
         align-items: center;
         height: 100%;
         padding: 0 24px;
@@ -194,6 +218,12 @@ section {
         &:hover {
             background-color: #FFC400;
             color: #ffffff;
+        }
+
+        @media only screen and (min-width: 1200px) {
+            &.language {
+                display: none;
+            }
         }
     }
 
@@ -850,6 +880,22 @@ section {
         }
         50% {
             transform: translateX(95%);
+        }
+    }
+}
+
+body {
+    &.en {
+        .top-banner {
+            .topic__company {
+                font-size: 3rem;
+            }
+            .topic__description {
+                font-size: 1.8rem;
+            }
+            .subTxt {
+                font-size: 1.2rem;
+            }
         }
     }
 }

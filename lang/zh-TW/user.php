@@ -3,6 +3,13 @@
 return [
     'company_name' => '碩誼有限公司',
 
+    'navi' => [
+        'index' => "首頁",
+        'about-us' => "關於碩誼",
+        'services' => "專業服務",
+        'contact-us' => "聯絡我們",
+    ],
+
     'slogan' => [
         'first' => "碩誼有限公司",
         'second' => "— 桃園在地經營30餘年的機械加工與組裝專家",

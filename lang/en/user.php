@@ -3,6 +3,12 @@
 return [
     'company_name' => 'Shuoh-Yi Co., Ltd.',
 
+    'navi' => [
+        'index' => "Index",
+        'about-us' => "About Us",
+        'services' => "Services",
+        'contact-us' => "Contact Us",
+    ],
 
     'slogan' => [
         'first' => "Shuoh-Yi Co., Ltd.",
