@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'company_name' => 'Shuoh-Yi Co., Ltd.',
+    'company_name' => 'Shuo Yi Enterprise Co., Ltd.',
 
     'navi' => [
         'index' => "Index",
@@ -11,17 +11,16 @@ return [
     ],
 
     'slogan' => [
-        'first' => "Shuoh-Yi Co., Ltd.",
-        'second' => "— Taiwan's Trusted Expert in Mechanical Processing and Assembly with Over 30 Years of Experience",
-        'third' => "With over three decades of experience in Taiwan's manufacturing industry, Shuoh-Yi Co., Ltd.",
-        'forth' => "is dedicated to delivering high-quality mechanical processing and assembly services. We combine local technical expertise with a global outlook, providing top-tier ODM and OEM solutions to meet the evolving needs of our clients.",
+        'first' => "Shuo Yi Enterprise Co., Ltd.",
+        'second' => "— A professional mechanical design and manufacturing company based in Taoyuan, Taiwan, with over 30 years of experience.",
+        'third' => "We are dedicated to providing industry-leading ODM and OEM solutions to our clients.",
     ],
 
     'about-us' => [
         'title' => "About Us",
         'group' => [
             'title1' => "Rooted Locally",
-            'text1' =>"Familiar with Taiwan's industrial needs, we provide the most attentive service.",
+            'text1' =>"By working closely with local Taiwanese suppliers, we ensure that we meet the specific needs of the industry while providing the most attentive service.",
             'title2' => "Rich Experience",
             'text2' => "30 years of professional expertise, accumulating countless successful cases.",
             'title3' => "Customized Solutions",
@@ -50,7 +49,8 @@ return [
             'text2-2' => "We specialize in providing precise welding services for frames, with flexible production capabilities to design and adjust according to your specific requirements, ensuring product reliability and stability.",
             'text2-3' => "Shuoh-Yi's custom welding frame service not only emphasizes quality but also pays close attention to detail. Our professional team has extensive experience, ensuring the precision and strength of each weld point throughout the process. Through rigorous quality inspections, we guarantee that the final product meets your expectations completely.",
             'title3' => "Steel Mechanical Artworks Production",
-            'text3-1' => "We blend craftsmanship with creative artistry to create imaginative steel mechanical artworks. Collaborating with artists, we provide mechanized and automated solutions.",
+            'text3-1' => "We combine cutting-edge craftsmanship and creative artistry, focusing on the creation of unique and imaginative steel-structure mechanical artworks. Whatever design concept or idea you have, we can bring it to life, providing innovative solutions such as mechanization and automation according to your needs. We have extensive experience working closely with various types of artists, ranging from large-scale public art installations to small steel structure designs for personal homes or gardens. Our works not only serve functional purposes but also showcase the aesthetics and craftsmanship of steel, creating one-of-a-kind pieces tailored to each client.",
+            'text3-2' => "Whether your project requires integration with power systems, interactive features, or simply displaying the raw beauty of steel, we can meticulously design and create according to your needs, fulfilling diverse spatial and display requirements. We look forward to collaborating with you to create works that blend artistry and functionality, adding a unique charm to your space.",
         ]
     ],
 

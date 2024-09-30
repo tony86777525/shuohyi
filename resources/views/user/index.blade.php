@@ -19,7 +19,7 @@
             </div>
             <div class="navbar__other">
                 <div class="navbar--logo logo">
-                    <a href="{{ route('user.index') }}"><img src="{{ url('/images/user/index/logo.png') }}" alt="碩誼有限公司"></a>
+                    <a href="{{ route('user.index') }}"><img src="{{ url('/images/user/index/logo.png') }}" alt="{{ __('user.company_name') }}"></a>
                 </div>
                 <div class="navbar--menu" data-js-click="navbar"></div>
                 <div class="navbar--nav">
@@ -35,6 +35,7 @@
         </nav>
 
         <section data-section="0" class="top-banner">
+            <img src="{{ url('/images/user/index/top-banner/banner1.jpg') }}" alt="{{ __('user.company_name') }}">
             <div class="top-banner__content">
                 <div class="topic">
                     <h1 class="topic__company wow animate__animated animate__fadeInRightShort">{{ __('user.slogan.first') }}</h1>
@@ -42,7 +43,6 @@
                 </div>
                 <div class="subTxt wow animate__animated animate__fadeIn animate__delay-2s">
                     <p>{{ __('user.slogan.third') }}</p>
-                    <p>{{ __('user.slogan.forth') }}</p>
                 </div>
             </div>
         </section>
@@ -80,13 +80,16 @@
 
                             <div class="intro--image">
                                 <div class="image wow animate__animated  animate__fadeIn">
-                                    <img src="{{ url('/images/user/index/about-us/img1.png') }}">
+                                    <img src="{{ url('/images/user/index/about-us/img1.jpg') }}">
                                 </div>
-                                <div class="imagee wow animate__animated  animate__fadeIn">
+                                <div class="image wow animate__animated  animate__fadeIn">
                                     <img src="{{ url('/images/user/index/about-us/img2.png') }}">
                                 </div>
-                                <div class="imagee wow animate__animated  animate__fadeIn">
-                                    <img src="{{ url('/images/user/index/about-us/img3.png') }}">
+                                <div class="image wow animate__animated  animate__fadeIn">
+                                    <img src="{{ url('/images/user/index/about-us/img3.jpg') }}">
+                                </div>
+                                <div class="image wow animate__animated  animate__fadeIn">
+                                    <img src="{{ url('/images/user/index/about-us/img4.jpg') }}">
                                 </div>
                             </div>
                         </div>
@@ -121,16 +124,16 @@
                                         <img src="{{ url('/images/user/index/service/hepa/img1.jpg') }}">
                                     </div>
                                     <div class="image wow animate__animated animate__fadeIn">
-                                        <img src="{{ url('/images/user/index/service/hepa/img2.jpg') }}">
+                                        <img src="{{ url('/images/user/index/service/hepa/img2.png') }}">
                                     </div>
                                     <div class="image wow animate__animated animate__fadeIn">
-                                        <img src="{{ url('/images/user/index/service/hepa/img3.jpg') }}">
+                                        <img src="{{ url('/images/user/index/service/hepa/img3.png') }}">
                                     </div>
                                     <div class="image wow animate__animated animate__fadeIn">
                                         <img src="{{ url('/images/user/index/service/hepa/img4.jpg') }}">
                                     </div>
                                     <div class="image wow animate__animated animate__fadeIn">
-                                        <img src="{{ url('/images/user/index/service/hepa/img5.jpg') }}">
+                                        <img src="{{ url('/images/user/index/service/hepa/img5.png') }}">
                                     </div>
                                 </div>
                             </div>
@@ -168,6 +171,8 @@
                                 <div class="part__content--topic wow animate__animated animate__fadeInRightShort">{{ __('user.services.group.title3') }}</div>
                                 <div class="part__content--txt wow animate__animated animate__fadeIn animate__delay-1s">
                                     <p>{{ __('user.services.group.text3-1') }}</p>
+                                    <br>
+                                    <p>{{ __('user.services.group.text3-2') }}</p>
                                 </div>
                                 <div class="part__content--image">
                                     <div class="image wow animate__animated animate__fadeIn">

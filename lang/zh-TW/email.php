@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'fromName'                        => '碩誼有限公司',
-    'subject'                         => '碩誼有限公司',
+    'fromName'                        => '碩誼實業有限公司',
+    'subject'                         => '碩誼實業有限公司',
     'detail'                          => '<div><p style="text-align: center; font-size: 20px; font-weight: bold; color: #343262;">:name 先生/小姐 您好，你已成功發送信件，我們會盡快與您聯絡。</p>
                                         </div>
                                         <div>
