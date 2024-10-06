@@ -30,8 +30,8 @@ Route::group([
             Route::post('/api/mail/store', 'MailController@store')
                 ->name('mail.store');
 
-            Route::post('/api/captcha/reload', 'CaptchaController@getCaptchaImageSrc')
-                ->name('captcha.reload');
+//            Route::post('/api/captcha/reload', 'CaptchaController@getCaptchaImageSrc')
+//                ->name('captcha.reload');
         });
     });
 });
