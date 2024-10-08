@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
         <meta name="description" content="{{ __('user.meta.description') }}">
-        <meta name="keywords" content="摺紙機、打折機、焊接、電銲、鋼構藝術、桃園、碩誼、客製化自動化機台、Taiwan、folding machine">
+        <meta name="keywords" content="碩誼實業有限公司、摺紙機、打折機、焊接、電銲、鋼構藝術、桃園、碩誼、客製化自動化機台、Taiwan、folding machine">
 
         <title>{{ __('user.company_name') }}</title>
 
