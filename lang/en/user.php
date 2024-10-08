@@ -3,6 +3,10 @@
 return [
     'company_name' => 'Shuo Yi Enterprise Co., Ltd.',
 
+    'meta' => [
+        'description' => 'Shuo Yi Enterprise Co., Ltd. is a mechanical design and processing factory that has been operating locally in Taoyuan for over 30 years. The company specializes in the design and manufacturing of automation equipment (HEPA automatic servo folding machine), customized frame CO2 welding, electric welding, machine assembly, and the production of steel structure mechanical artworks. We provide various OEM and ODM customized processing services.',
+    ],
+
     'navi' => [
         'index' => "Index",
         'about-us' => "About Us",

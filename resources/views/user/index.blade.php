@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
-        <meta name="description" content="碩誼實業有限公司 — 桃園在地 經營30多年的專業機械設計加工廠。致力於為客戶提供領先業界的ODM與OEM解決方案。">
+        <meta name="description" content="{{ __('user.meta.description') }}">
         <meta name="keywords" content="摺紙機、打折機、焊接、電銲、鋼構藝術、桃園、碩誼、客製化自動化機台、Taiwan、folding machine">
 
         <title>{{ __('user.company_name') }}</title>
