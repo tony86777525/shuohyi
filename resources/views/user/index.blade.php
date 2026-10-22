@@ -274,10 +274,10 @@
                                 {{--                                    <div data-js="form-error" class="form-error"></div>--}}
                                 {{--                                </div>--}}
                             </div>
-                            <div class="form__button">
-                                <div class="notice">{{ __('user.contact-us.form.notice') }}</div>
-                                <button data-js="form-submit">{{ __('user.contact-us.form.button') }}</button>
-                            </div>
+{{--                            <div class="form__button">--}}
+{{--                                <div class="notice">{{ __('user.contact-us.form.notice') }}</div>--}}
+{{--                                <button data-js="form-submit">{{ __('user.contact-us.form.button') }}</button>--}}
+{{--                            </div>--}}
                         </form>
                     </div>
                 </div>
