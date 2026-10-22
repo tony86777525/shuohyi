@@ -198,22 +198,22 @@
                 </div>
             </div>
         </section>
-        <section data-section="3" class="contact-us">
-            <div class="container">
-                <div class="contact-us__content">
-                    <h2 class="service__content--title">
-                        <span class="wow animate__animated animate__rubberBand">{{ __('user.contact-us.title') }}</span>
-                        <span class="delimiter wow animate__animated animate__flip"></span>
-                    </h2>
-                    <div class="about-us__content--intro">
-                        <div class="intro">
-                            <div class="intro--topic wow animate__animated animate__fadeInRightShort">{{ __('user.contact-us.text1') }}</div>
-                            <div class="intro--txt wow animate__animated animate__fadeIn animate__delay-1s">
-                                <p>{{ __('user.contact-us.text2') }}</p>
-                                <p>{{ __('user.contact-us.text3') }}</p>
-                            </div>
-                        </div>
-                    </div>
+{{--        <section data-section="3" class="contact-us">--}}
+{{--            <div class="container">--}}
+{{--                <div class="contact-us__content">--}}
+{{--                    <h2 class="service__content--title">--}}
+{{--                        <span class="wow animate__animated animate__rubberBand">{{ __('user.contact-us.title') }}</span>--}}
+{{--                        <span class="delimiter wow animate__animated animate__flip"></span>--}}
+{{--                    </h2>--}}
+{{--                    <div class="about-us__content--intro">--}}
+{{--                        <div class="intro">--}}
+{{--                            <div class="intro--topic wow animate__animated animate__fadeInRightShort">{{ __('user.contact-us.text1') }}</div>--}}
+{{--                            <div class="intro--txt wow animate__animated animate__fadeIn animate__delay-1s">--}}
+{{--                                <p>{{ __('user.contact-us.text2') }}</p>--}}
+{{--                                <p>{{ __('user.contact-us.text3') }}</p>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
 
 {{--                    <div class="about-us__content--form">--}}
 {{--                        <form class="form" method="POST" action="{{ route('user.api.mail.store') }}"  data-js="post-form">--}}
@@ -280,9 +280,9 @@
 {{--                            </div>--}}
 {{--                        </form>--}}
 {{--                    </div>--}}
-                </div>
-            </div>
-        </section>
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </section>--}}
 
         <div class="loading" data-js="loading">
             <div class="loading__overflow"></div>
