@@ -262,17 +262,17 @@
                                     </label>
                                     <div data-js="form-error" class="form-error"></div>
                                 </div>
-{{--                                <div class="formRow formRow--single required">--}}
-{{--                                    <label class="formCol">--}}
-{{--                                        <span class="formCol__title">驗證碼</span>--}}
-{{--                                        <input type="text" name="captcha" class="formEl formEl--txtIpt @error('captcha') is-invalid @enderror" autocomplete="off">--}}
-{{--                                        <div class="captcha">--}}
-{{--                                            <img src="{{ captcha_src() }}" alt="">--}}
-{{--                                            <i class="refresh" data-js="refresh-captcha" data-js-url="{{ route('user.api.captcha.reload') }}"></i>--}}
-{{--                                        </div>--}}
-{{--                                    </label>--}}
-{{--                                    <div data-js="form-error" class="form-error"></div>--}}
-{{--                                </div>--}}
+                                {{--                                <div class="formRow formRow--single required">--}}
+                                {{--                                    <label class="formCol">--}}
+                                {{--                                        <span class="formCol__title">驗證碼</span>--}}
+                                {{--                                        <input type="text" name="captcha" class="formEl formEl--txtIpt @error('captcha') is-invalid @enderror" autocomplete="off">--}}
+                                {{--                                        <div class="captcha">--}}
+                                {{--                                            <img src="{{ captcha_src() }}" alt="">--}}
+                                {{--                                            <i class="refresh" data-js="refresh-captcha" data-js-url="{{ route('user.api.captcha.reload') }}"></i>--}}
+                                {{--                                        </div>--}}
+                                {{--                                    </label>--}}
+                                {{--                                    <div data-js="form-error" class="form-error"></div>--}}
+                                {{--                                </div>--}}
                             </div>
                             <div class="form__button">
                                 <div class="notice">{{ __('user.contact-us.form.notice') }}</div>
@@ -291,7 +291,7 @@
             </div>
         </div>
     </body>
-    <footer class="footer">
+    <footer class="footer" data-section="3">
         <div class="footer__content">
             <div class="contact">
                 <div class="contactRow contactRow--phone"><a href="tel:03-3299570">03-3292718</a></div>
