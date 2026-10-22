@@ -215,71 +215,71 @@
                         </div>
                     </div>
 
-                    <div class="about-us__content--form">
-                        <form class="form" method="POST" action="{{ route('user.api.mail.store') }}"  data-js="post-form">
-                            <div class="form__content">
-                                <div class="formRow formRow--single required">
-                                    <label class="formCol">
-                                        <span class="formCol__title">{{ __('user.contact-us.form.name') }}</span>
-                                        <input type="text" name="name" class="formEl formEl--txtIpt">
-                                    </label>
-                                    <div data-js="form-error" class="form-error"></div>
-                                </div>
+{{--                    <div class="about-us__content--form">--}}
+{{--                        <form class="form" method="POST" action="{{ route('user.api.mail.store') }}"  data-js="post-form">--}}
+{{--                            <div class="form__content">--}}
+{{--                                <div class="formRow formRow--single required">--}}
+{{--                                    <label class="formCol">--}}
+{{--                                        <span class="formCol__title">{{ __('user.contact-us.form.name') }}</span>--}}
+{{--                                        <input type="text" name="name" class="formEl formEl--txtIpt">--}}
+{{--                                    </label>--}}
+{{--                                    <div data-js="form-error" class="form-error"></div>--}}
+{{--                                </div>--}}
 
-                                <div class="formRow formRow--partial">
-                                    <div class="formCol">
-                                        <input id="sex_1" type="radio" name="sex" value="1" class="formEl formEl--radio" checked>
-                                        <label for="sex_1" class="formEl formEl--label">
-                                            <span>{{ __('user.contact-us.form.sex.male') }}</span>
-                                        </label>
-                                    </div>
-                                    <div class="formCol">
-                                        <input id="sex_0" type="radio" name="sex" value="0" class="formEl formEl--radio">
-                                        <label for="sex_0" class="formEl formEl--label">
-                                            <span>{{ __('user.contact-us.form.sex.female') }}</span>
-                                        </label>
-                                    </div>
-                                    <div data-js="form-error" class="form-error"></div>
-                                </div>
-                                <div class="formRow formRow--single required">
-                                    <label class="formCol">
-                                        <span class="formCol__title">{{ __('user.contact-us.form.tel') }}</span>
-                                        <input type="text" name="phone" class="formEl formEl--txtIpt">
-                                    </label>
-                                    <div data-js="form-error" class="form-error"></div>
-                                </div>
-                                <div class="formRow formRow--single required">
-                                    <label class="formCol">
-                                        <span class="formCol__title">{{ __('user.contact-us.form.email') }}</span>
-                                        <input type="email" name="email" class="formEl formEl--txtIpt">
-                                    </label>
-                                    <div data-js="form-error" class="form-error"></div>
-                                </div>
-                                <div class="formRow formRow--single required">
-                                    <label class="formCol">
-                                        <span class="formCol__title">{{ __('user.contact-us.form.comments') }}</span>
-                                        <textarea name="contact" class="formEl formEl--txtArea" rows="8"></textarea>
-                                    </label>
-                                    <div data-js="form-error" class="form-error"></div>
-                                </div>
-                                {{--                                <div class="formRow formRow--single required">--}}
-                                {{--                                    <label class="formCol">--}}
-                                {{--                                        <span class="formCol__title">驗證碼</span>--}}
-                                {{--                                        <input type="text" name="captcha" class="formEl formEl--txtIpt @error('captcha') is-invalid @enderror" autocomplete="off">--}}
-                                {{--                                        <div class="captcha">--}}
-                                {{--                                            <img src="{{ captcha_src() }}" alt="">--}}
-                                {{--                                            <i class="refresh" data-js="refresh-captcha" data-js-url="{{ route('user.api.captcha.reload') }}"></i>--}}
-                                {{--                                        </div>--}}
-                                {{--                                    </label>--}}
-                                {{--                                    <div data-js="form-error" class="form-error"></div>--}}
-                                {{--                                </div>--}}
-                            </div>
+{{--                                <div class="formRow formRow--partial">--}}
+{{--                                    <div class="formCol">--}}
+{{--                                        <input id="sex_1" type="radio" name="sex" value="1" class="formEl formEl--radio" checked>--}}
+{{--                                        <label for="sex_1" class="formEl formEl--label">--}}
+{{--                                            <span>{{ __('user.contact-us.form.sex.male') }}</span>--}}
+{{--                                        </label>--}}
+{{--                                    </div>--}}
+{{--                                    <div class="formCol">--}}
+{{--                                        <input id="sex_0" type="radio" name="sex" value="0" class="formEl formEl--radio">--}}
+{{--                                        <label for="sex_0" class="formEl formEl--label">--}}
+{{--                                            <span>{{ __('user.contact-us.form.sex.female') }}</span>--}}
+{{--                                        </label>--}}
+{{--                                    </div>--}}
+{{--                                    <div data-js="form-error" class="form-error"></div>--}}
+{{--                                </div>--}}
+{{--                                <div class="formRow formRow--single required">--}}
+{{--                                    <label class="formCol">--}}
+{{--                                        <span class="formCol__title">{{ __('user.contact-us.form.tel') }}</span>--}}
+{{--                                        <input type="text" name="phone" class="formEl formEl--txtIpt">--}}
+{{--                                    </label>--}}
+{{--                                    <div data-js="form-error" class="form-error"></div>--}}
+{{--                                </div>--}}
+{{--                                <div class="formRow formRow--single required">--}}
+{{--                                    <label class="formCol">--}}
+{{--                                        <span class="formCol__title">{{ __('user.contact-us.form.email') }}</span>--}}
+{{--                                        <input type="email" name="email" class="formEl formEl--txtIpt">--}}
+{{--                                    </label>--}}
+{{--                                    <div data-js="form-error" class="form-error"></div>--}}
+{{--                                </div>--}}
+{{--                                <div class="formRow formRow--single required">--}}
+{{--                                    <label class="formCol">--}}
+{{--                                        <span class="formCol__title">{{ __('user.contact-us.form.comments') }}</span>--}}
+{{--                                        <textarea name="contact" class="formEl formEl--txtArea" rows="8"></textarea>--}}
+{{--                                    </label>--}}
+{{--                                    <div data-js="form-error" class="form-error"></div>--}}
+{{--                                </div>--}}
+{{--                                --}}{{--                                <div class="formRow formRow--single required">--}}
+{{--                                --}}{{--                                    <label class="formCol">--}}
+{{--                                --}}{{--                                        <span class="formCol__title">驗證碼</span>--}}
+{{--                                --}}{{--                                        <input type="text" name="captcha" class="formEl formEl--txtIpt @error('captcha') is-invalid @enderror" autocomplete="off">--}}
+{{--                                --}}{{--                                        <div class="captcha">--}}
+{{--                                --}}{{--                                            <img src="{{ captcha_src() }}" alt="">--}}
+{{--                                --}}{{--                                            <i class="refresh" data-js="refresh-captcha" data-js-url="{{ route('user.api.captcha.reload') }}"></i>--}}
+{{--                                --}}{{--                                        </div>--}}
+{{--                                --}}{{--                                    </label>--}}
+{{--                                --}}{{--                                    <div data-js="form-error" class="form-error"></div>--}}
+{{--                                --}}{{--                                </div>--}}
+{{--                            </div>--}}
 {{--                            <div class="form__button">--}}
 {{--                                <div class="notice">{{ __('user.contact-us.form.notice') }}</div>--}}
 {{--                                <button data-js="form-submit">{{ __('user.contact-us.form.button') }}</button>--}}
 {{--                            </div>--}}
-                        </form>
-                    </div>
+{{--                        </form>--}}
+{{--                    </div>--}}
                 </div>
             </div>
         </section>
